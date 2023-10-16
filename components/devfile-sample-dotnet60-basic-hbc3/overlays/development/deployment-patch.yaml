@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-hbc3
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rsoaresd_org/spi-demos-atmd-tenant/dotnet-component/devfile-sample-dotnet60-basic-hbc3@sha256:8dfeccffac5522fd4331d36aa3ca816224fda95b0f31158fa802c084e514033e
+        name: main
+        resources: {}
+status: {}
